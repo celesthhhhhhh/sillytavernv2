@@ -3,7 +3,7 @@
 dataRoot: ./data
 # -- SERVER CONFIGURATION --
 # Listen for incoming connections
-listen: false
+listen: true
 # Listen on a specific address, supports IPv4 and IPv6
 listenAddress:
   ipv4: 0.0.0.0
@@ -57,7 +57,7 @@ ssl:
   keyPassphrase: ""
 # -- SECURITY CONFIGURATION --
 # Toggle whitelist mode
-whitelistMode: true
+whitelistMode: false
 # When enabled, whitelist will also verify IP in headers enabled in `forwardedHeaders` section.
 enableForwardedWhitelist: true
 # Whitelist of allowed IP addresses
@@ -179,7 +179,7 @@ sessionTimeout: -1
 # Disable CSRF protection - NOT RECOMMENDED
 disableCsrfProtection: false
 # Disable startup security checks - NOT RECOMMENDED
-securityOverride: false
+securityOverride: true
 # -- LOGGING CONFIGURATION --
 logging:
   # Enable access logging to access.log file and console output
